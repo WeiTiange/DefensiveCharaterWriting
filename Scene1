@@ -2,64 +2,83 @@
 === Scene_1 ===
 ~ inDoor += 1
 { inDoor == 1:
-This patient is named Jennifer, and this is the first time she has come to my clinic.
-
-"knock knock"
-
-The door is open,
+    - ”Knock Knock”
+    
+      Doctor: Please come in.
+      
+      You see a man in a woman's clothing walking in.
+      
+      Doctor: Please take a seat.
+      
 }
 
--Doctor: How is your day, Jennifer?
+- Doctor: What is your name?
+- Jessica: Jessica.
+- Doctor: Alright, Jessica, are you ready for today's treatment?
+- Jessica: I am ready.
+- Doctor: So, how is your day, Jessica?
+- Jessica: I am very stressed.
+- Doctor: What makes you stressed? Please tell me about yourself.
+- Jennifer: I am a teacher, teaching in middle school. The time is changing, and many of my students are making me crazy. They do not turn in their homework, play during class, and even some students secretly smoke in school! I always call for their parents to take care of their children, but they blame me, saying it is my responsibility to teach their children to become better person! Are their parents don't know that they are the best teachers for their kids?
 
--Jennifer: Not that good. I am very stressed.
-
-Doctor: What makes you stressed? Please tell me if you can.
-
-Jennifer: I am a teacher, teaching in middle school. The time is changing, and many of my students are making me crazy. They do not turn in their homework, play during class, and even some students secretly smoke in school! I always call for their parents to take care of their children, but they blame me, saying it is my responsibility to teach their children to become better person! If their parents don't know that, they are the best teachers for their kids!
-
-*["Sounds like you have a tough time."]-> a
-
-*[Say nothing] -> b
+* ["Sounds like you have a tough time."] -> a
+* [Say nothing.] -> b
 
 == a
-- "Sounds like you have a tough time. "
+"Sounds like you have a tough time."
 - -> b
- 
+
 == b
--Jennifer: Also, one more thing, I don't know if I should tell you or not.
+-Jessica: Also, one more thing, I don't know if I should tell you or not.
 
--Doctor: You can tell me anything you want; nobody will know what happens in this room.
+-Doctor: You can tell me anything you want.
 
-- Jennifer: I might make one of my student suicide.
+- Jessica: I might make one of my student suicide.
 
 +[You take out a pen and a notebook, ready to record some important information]
 
-- Doctor: Please tell me more details.
+-Doctor: Please tell me more details.
 
-- Jennifer: He is one of my favorite students, I expect him to go to a better high school, so I always give him some extra help and let him come to my office for some extra lessons. 
+-Jessica: He is one of my favorite students, I expect him to go to a better high school, so I always give him some extra help and let him come to my office for some extra lessons.
 
 - Doctor: What is his name?
 
-- Jennifer: Peter.
+- Jessica: Kevin.
 
 - Doctor: Please continue.
 
-- Jennifer: Sometimes, I can dream of still teaching him while I fall asleep, but his face is blurred. I can't see what he looks like.
+- Jessica: Sometimes, I can dream of still teaching him while I fall asleep, but his face is blurred. I can't see what he looks like.
 
-- Doctor: His death caused you some mental illness and made you recall some of the things you had with him in your dreams. If you do this for a long time, you will suffer from severe depression.
+{Scene_2: 
+    Doctor: Do you know what happened to him that caused him to suicide?
+    Jessica: I am not sure.
+    Doctor: As your favorite student, you must know him very well. Please thinks about it carefully. Is there really nothing that caused him to commit suicide?
 
-- Jennifer: Also, one more thing. A policeman is always trying to catch me, but somehow, I can always successfully run away from him.
+    Jessica: Hmmm…..I always suspected I was putting too much pressure on him.
+    Doctor: Is it possible that it is a school bully?
+    Jessica: Bully?
+    Doctor: Well, that's the most common cause of student suicide.
+    Jessica: I…I remember. He seemed to have said he was being bullied, but I didn't care.
+    Doctor: Look like this is one of the reasons.
+}
 
-- Doctor: In your dreams? or the real world?
+ {not Scene_2:
+    Doctor: His death caused you some mental illness and made you recall some of the things you had with him in your dreams. 
 
-- Jennifer: I am not sure. I don't know.
+    Jessica: I really like him. It is a shame that he suicide.
+}
 
-- Doctor: It is ok. I pretty much know what happens to you. Take this medicine back, and ensure you have a quarter of the pill.
+- Jessica: One more thing, I seem to be being chased by a cop lately.
+  Doctor: Police? In reality or in a dream?
+  Jessica: I am not sure. It feels vague, like in reality, like in a dream.
+  Jessica:  Every time this policeman tries to catch me, it disappears out of thin air, which is very strange.
+  Doctor: I will record that, and I also get a general idea of what's going on.
+  Jessica: Do I need any medicine?
+  Doctor: Not yet. I'll tell you what medicine to take when the whole diagnosis is over.
 
-- Jennifer: Alright, doctor, thanks for hearing my story today. I am really stressed about hiding my story.
+* [Snap your fingers]
 
-- Doctor: No problem, Mrs.Jennifer, and I will see you next week.
+- You found that she slowly closed her eyes, and a different look appeared after a while.
 
-*[Next Patient]
 
--> MainLoop
+- -> MainLoop
