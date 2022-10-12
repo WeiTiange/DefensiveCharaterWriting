@@ -1,0 +1,38 @@
+=== Scene_4 ===
+~ inDoor += 1
+{ inDoor == 1:
+This patient named Rick is the first time he has come to my clinic.
+
+"knock knock"
+
+The door is open,
+}
+
+Doctor: How is your day, Rick?
+
+Rick: Really tired.
+
+Doctor: Anything that makes you stress?
+
+Rick: I am chasing a criminal.
+
+Doctor: Oh! What kind of criminal?
+
+Rick: She is a teacher, she has been making student suicide during her teaching time, but she says it is not her fault. However, I have found evidence that she made her student die, and I got to catch her!
+
+Doctor: Sounds dangerous. Did you catch her?
+
+Rick: Not yet. I don't know why. Every time while I am chasing her, she could always successfully escape, really wired.
+
+Doctor: You will catch her.
+
+Rick: I know.
+
+Doctor: Any information about the student?
+
+Rick: I do not really remember his name, but I know he has a grandpa who is crying every day in front of the school.
+
+Doctor: I see.
+
++[Next Patient]
+-> MainLoop

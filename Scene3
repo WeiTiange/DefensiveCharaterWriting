@@ -1,0 +1,54 @@
+=== Scene_3 ===
+ ~ inDoor += 1
+{ inDoor == 1:
+This patient is named Peter, and this is the first time he has come to my clinic.
+
+"knock knock"
+
+The door is open,
+}
+
+Doctor: How is your day, Peter?
+
+Peter: I don't know.
+
+Doctor: Anything happens?
+
+Peter: I somehow think I was dead, but I don't know why I am still alive.
+
+Doctor: Tell me more detail about yourself.
+
+Peter: I am a student studying in middle school, but just a few months ago, I got bullied.
+
+*["Where are your parents?"]
+
+-"Where are your parents?"
+
+-Peter: My parents are working out of town, and nobody really cares about me.
+
+-Doctor: How about your teacher?
+
+-Peter: My teacher, you are saying that bi*ch?
+
+-Doctor: What happened to her?
+
+-Peter: She only cares about my grade. I told her I got bullied, but she just said I needed to have a good relationship with them.
+
+-Doctor: I see.
+
+-Doctor: Is there more information that you want to tell me?
+
+-Peter: Oh yes, one more thing. I somehow can dream that bi*ch while I am sleeping. She is still teaching me! It makes me crazy!!!!
+
+-Doctor: No worry, I will give you some medicine to help you.
+
++[Stand up and take a small bottle of pills]
+
+-Doctor: Make sure to take the pill before you sleep, quarters of the tablet.
+
+-Peter: Thank you! Doctor.
+
+-Doctor: I will see you next week.
++[Next patient]
+
+-> MainLoop

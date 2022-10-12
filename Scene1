@@ -1,0 +1,65 @@
+
+=== Scene_1 ===
+~ inDoor += 1
+{ inDoor == 1:
+This patient is named Jennifer, and this is the first time she has come to my clinic.
+
+"knock knock"
+
+The door is open,
+}
+
+-Doctor: How is your day, Jennifer?
+
+-Jennifer: Not that good. I am very stressed.
+
+Doctor: What makes you stressed? Please tell me if you can.
+
+Jennifer: I am a teacher, teaching in middle school. The time is changing, and many of my students are making me crazy. They do not turn in their homework, play during class, and even some students secretly smoke in school! I always call for their parents to take care of their children, but they blame me, saying it is my responsibility to teach their children to become better person! If their parents don't know that, they are the best teachers for their kids!
+
+*["Sounds like you have a tough time."]-> a
+
+*[Say nothing] -> b
+
+== a
+- "Sounds like you have a tough time. "
+- -> b
+ 
+== b
+-Jennifer: Also, one more thing, I don't know if I should tell you or not.
+
+-Doctor: You can tell me anything you want; nobody will know what happens in this room.
+
+- Jennifer: I might make one of my student suicide.
+
++[You take out a pen and a notebook, ready to record some important information]
+
+- Doctor: Please tell me more details.
+
+- Jennifer: He is one of my favorite students, I expect him to go to a better high school, so I always give him some extra help and let him come to my office for some extra lessons. 
+
+- Doctor: What is his name?
+
+- Jennifer: Peter.
+
+- Doctor: Please continue.
+
+- Jennifer: Sometimes, I can dream of still teaching him while I fall asleep, but his face is blurred. I can't see what he looks like.
+
+- Doctor: His death caused you some mental illness and made you recall some of the things you had with him in your dreams. If you do this for a long time, you will suffer from severe depression.
+
+- Jennifer: Also, one more thing. A policeman is always trying to catch me, but somehow, I can always successfully run away from him.
+
+- Doctor: In your dreams? or the real world?
+
+- Jennifer: I am not sure. I don't know.
+
+- Doctor: It is ok. I pretty much know what happens to you. Take this medicine back, and ensure you have a quarter of the pill.
+
+- Jennifer: Alright, doctor, thanks for hearing my story today. I am really stressed about hiding my story.
+
+- Doctor: No problem, Mrs.Jennifer, and I will see you next week.
+
+*[Next Patient]
+
+-> MainLoop

@@ -1,0 +1,47 @@
+=== Scene_2 ===
+~ inDoor += 1
+{ inDoor == 1:
+This patient is named Jeff, and this is the first time he has come to my clinic.
+
+"knock knock"
+
+The door is open,
+}
+
+Doctor: How is your day, Jeff?
+
+Jeff: Tired.
+
+Doctor: Please tell me about yourself.
+
+Jeff: As you see, I am just an old man.
+
+Doctor: You look haggard; what happens?
+
+Jeff: My Grandson dies, and I watch him die. I...I don't know what to do!
+
++["He cry in front of you"]
+
+-You get up and get him a cup of hot water.
+
+-Doctor: Drink some water, and talk slowly.
+
+-Jeff: He is my only Grandson. Why did he suicide? It is all my fault.
+
+-Doctor: It is not your fault. Please tell me more detail about your Grandson.
+
+-Jeff: His name is Peter, he is in a middle school in our town, and he is one of the best students in his class.
+
+-Jeff: His parents are all working out of town, so I am the one who is taking care of him.
+
+*["Did he say something to you before he suicide"]
+
+-Jeff: He did not say anything, but I can tell he is hiding something.
+
+-Jeff: Oh yes, I remember that he has frequent bruises on his feet and arms.
+
+-Doctor: I know what has happened to him.
+
++[Next patient]
+
+-> MainLoop
