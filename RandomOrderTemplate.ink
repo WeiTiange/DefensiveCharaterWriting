@@ -2,12 +2,14 @@ INCLUDE Scene1
 INCLUDE Scene2
 INCLUDE Scene3
 INCLUDE Scene4
+INCLUDE Start.ink
 
-I am a Psychologist, and today, there is a patient coming in to my clinic. 
--> MainLoop
 
 VAR Scene = 0
 VAR inDoor = 0
+
+
+-> Start
 
 === MainLoop ===
 ~ Scene = RANDOM(1, 4)
