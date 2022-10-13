@@ -1,8 +1,50 @@
 === Scene_4 ===
 ~ inDoor += 1
 { inDoor == 1:
-4
+    "Knock Knock"
+    Doctor: Please come in.
+    You see a man in a police uniform walking in.
+    Doctor: Please take a seat.
 }
 
-4
+Doctor: What is your name?
+Rick: Rick.
+Doctor: Alright, Rick, are you ready for today's treatment?
+Rick: I am ready.
+Doctor: So, how is your day, Rick?
+Rick: A little stress.
+Doctor: A little stress, that is not bad. What makes you stress?
+Rick: You know, I'm a police officer and I'm investigating a case recently. Regarding the case of a student committing suicide by jumping off a building, I think this matter is not just that simple. I think there are many things that have not been found out. The student's school quickly locked everything down and simply said the student committed suicide because of the stress.
+Doctor: What's that student's name?
+Rick： Kevin.
+
+* "You can tell me detaily what you found."
+
+- You saw that he suddenly turned his head, looked around, and seemed a little wary of you.
+Doctor: There is no recording equipment here, you can say it with confidence.
+Rick: I suspect it has something to do with his teacher.
+Doctor: Teacher?
+Rick: From what I've searched, his teacher seems to take him to her own office every week, but no one knows what's going on there. Although her teacher said she was tutoring him, as a police officer, I think it's more than that.
+Rick: Besides, recently, I can find the trace of that teacher. Every time I am about to catch her, she disappears, which makes me more suspicious of her.
+{Scene_2: 
+    "Have you searched about bullying?"
+    Rick: Bullying? Why do you say that?
+    Doctor: I talked to that kid and he said he was being bullied.
+    Rick: But I have no clue about bullying.
+    Rick: I see! It must be the school, because bullying has a great impact on the school, so they hide it, it's abominable!
+    Doctor: I think so too.
+    "If you catch the teacher, what do you want to ask her."
+    Rick: I just want to talk to her alone about that student, I have no malice.
+    Doctor: I see.
+}
+
+Doctor: I have a general understanding of your situation. I hope you can have a good chat with the teacher.
+Rick: Thank you for listening to me.
+Doctor: This is what I should do.
+
+*[Snap your fingers]
+
+- You found that he slowly closed his eyes, and a different look appeared after a while.
+
+
 -> MainLoop
