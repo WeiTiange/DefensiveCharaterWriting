@@ -1,9 +1,69 @@
 === Scene_3 ===
  ~ inDoor += 1
 { inDoor == 1:
- 3
+ "Knock Knock"
+ Doctor: Please come in.
+ You see a man in old-fashioned clothes clothing walking in.
+ Doctor: Please take a seat.    
 }
 
-3
+Doctor: What is your name?
+Bill: Bill.
+Doctor: Alright, Bill, are you ready for today's treatment?
+Bill: I am ready.
+Doctor: So, how is your day, Bill?
+Bill: I am tired.
+Doctor: Tell me about yourself.
+Bill: I am just an old man. There is no story about me.
+
+* [“You have a grandson, right?”] -> C3
+* [“Do you want to talk about my grandson?”] -> C3
+
+==C3
+You see the old man's eyes showing a hint of sadness the moment when he hears his grandson.
+Bill: How do you know I have a grandson?
+
+{Scene_2: 
+Doctor: I had a conversation with him once.
+Bill: A conversation. How do I not know?
+Doctor: It was a private conversation and he didn't tell anyone.
+}
+
+{not Scene_2:
+Doctor: I heard from the cops.
+Bill: I didn't expect a doctor to pay so much attention to that case.
+}
+
+Bill: So doctor, what do you want to know?
+”Did you know that before he committed suicide, he showed any suicidal tendencies?“
+Bill: Probably not. This kid has been withdrawn since childhood and dislikes talking to people. Even if I am his grandfather, he rarely talks to me.
+Doctor: Then, did he shows some abnormal behavior?
+Bill: I remember once a week he would lock himself up when he got home, and he wouldn't eat when I told him to eat, and it really pissed me off.
+Doctor: Have you talked to his teacher?
+Bill: I have been to the school and asked the teacher, but asked only for studies. I heard from the teacher that he is number one in the current class;he really makes me proud of him. His parents will be very happy when they know about it. Unfortunately, there is no more chance that I can share my happiness with his parents.
+“Ask about parents”
+Doctor: So, where are his parents?
+Bill: His parents weren't around when he was a kid, and there's no way around that. This small town has no opportunity to make money at all. So his parents left him and went to the big city to work for more money. They may come back once or twice a year but haven't come back in the last year, and I don’t know what happens to them.
+Bill: He is miserable. He has no parents to accompany him, and he doesn't even have many friends. I am really worried about him.
+*{Scene_2}["Ask about bullying"]->C4
+
+==C4
+Doctor: Did you know he has been bullied?
+Bill: Bu. . Bullying? How did I not know about this?
+Doctor: Your grandson told me he was bullied when talking with me. Did you not notice it at all?
+Bill: I, I, I seem to remember that he had said before that he was bullied by other students in the study, but I just think they are children, fighting is normal...
+Doctor: Then, did you find any bruises or wounds on his body?
+Bill: I. . I've seen it before, but I thought he was wrestling, so I didn't ask him.
+Doctor: The lack of concern from his family is also one of the reasons for his suicide.
+
+Doctor: I have a general understanding of your situation, and I am very sorry for what happened to your grandson.
+Doctor: You can't change what happened, so you must be fine.
+Bill: I understand, doctor.
+Doctor: Later, I will prescribe a box of medicine for you. Remember to take it, and it will be good.
+Bill: Thank you, doctor.
+
+* [Snap your fingers] 
+-You found that he slowly closed his eyes, and a different look appeared after a while.
+-> MainLoop
 
 -> MainLoop
