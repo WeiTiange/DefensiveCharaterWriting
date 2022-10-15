@@ -1,139 +1,311 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700|Quattrocento:700');
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700|Quattrocento:700');*/
+
+/*body {*/
+/*    font-family: 'Open Sans', sans-serif;*/
+/*    font-weight: lighter;*/
+/*    background: white;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*body.switched {*/
+/*    transition: color 0.6s, background-color 0.6s;*/
+/*}*/
+
+/*h1,*/
+/*h2 {*/
+/*    text-align: center;*/
+/*    font-family: "Quattrocento", Georgia, 'Times New Roman', Times, serif;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*h1 {*/
+/*    font-size: 30pt;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*h2 {*/
+/*    font-size: 14pt;*/
+/*    font-style: italic;*/
+/*    font-family: sans-serif;*/
+/*    font-weight: lighter;*/
+/*    color: #BBB;*/
+/*}*/
+
+/*.header {*/
+/*    padding-top: 3em;*/
+/*    padding-bottom: 3em;*/
+/*}*/
+
+/*!**/
+/*  Built-in class:*/
+/*    # author: Name*/
+/**!*/
+/*.byline {*/
+/*    font-style: italic;*/
+/*}*/
+
+/*.written-in-ink {*/
+/*    z-index: 3;*/
+/*    font-size: 9pt;*/
+/*    font-family: sans-serif;*/
+/*    text-align: center;*/
+/*    font-weight: 700;*/
+/*    position: fixed;*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*    background: white;*/
+/*    transition: color 0.6s, background 0.6s;*/
+/*    margin: 0;*/
+/*    padding-top: 6px;*/
+/*    padding-bottom: 6px;*/
+/*    height: 14px;*/
+/*    top: 0;*/
+/*}*/
+
+/*!* */
+/*  Enables <iframe> support work on itch.io when using mobile iOS*/
+/**!*/
+/*.outerContainer {*/
+/*    position: absolute;*/
+/*    display: block;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    -webkit-overflow-scrolling: touch;*/
+/*    overflow: scroll;*/
+/*    overflow-x: hidden;*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    margin-top: 24px;*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*}*/
+
+/*@media screen and (max-width: 980px) {*/
+/*    .outerContainer {*/
+/*        margin-top: 44px;*/
+/*        background-size: cover;*/
+/*        background-repeat: no-repeat;*/
+/*    }*/
+/*}*/
+
+/*.container {*/
+/*    display: block;*/
+/*    max-width: 600px;*/
+/*    margin: 0 auto;*/
+/*    padding: 20px;*/
+/*    padding-top: 4em;*/
+/*    background: white;*/
+/*}*/
+
+/*.switched .container {*/
+/*    transition: background-color 0.6s;*/
+/*}*/
+
+/*p {*/
+/*    font-size: 13pt;*/
+/*    color: #888;*/
+/*    line-height: 1.7em;*/
+/*    font-weight: lighter;*/
+/*}*/
+
+/*a {*/
+/*    font-weight: 700;*/
+/*    color: #b97c2c;*/
+/*    font-family: sans-serif;*/
+/*    transition: color 0.6s;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*a:hover {*/
+/*    color: black;*/
+/*    transition: color 0.1s;*/
+/*}*/
+
+/*strong {*/
+/*    color: black;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*img {*/
+/*    display: block;*/
+/*    margin: 0 auto;*/
+/*    max-width: 100%;*/
+/*}*/
+
+/*.container .hide {*/
+/*    opacity: 0.0;*/
+/*}*/
+
+/*.container .invisible {*/
+/*    display: none;*/
+/*}*/
+
+/*.container>* {*/
+/*    opacity: 1.0;*/
+/*    transition: opacity 1.0s;*/
+/*}*/
+
+/*!**/
+/*  Class applied to all choices*/
+/*  (Will always appear inside <p> element by default.)*/
+/**!*/
+/*.choice {*/
+/*    text-align: center;*/
+/*    line-height: 1.7em;*/
+/*}*/
+
+/*!* */
+/*  Class applied to first choice*/
+/**!*/
+/*:not(.choice)+.choice {*/
+/*    padding-top: 1em;*/
+/*}*/
+
+/*!**/
+/*  Class applied to choice links*/
+/**!*/
+/*.choice a {*/
+/*    font-size: 15pt;*/
+/*}*/
+
+/*!* */
+/*  Built-in class:*/
+/*    The End # CLASS: end*/
+/**!*/
+/*.end {*/
+/*    text-align: center;*/
+/*    font-weight: bold;*/
+/*    color: black;*/
+/*    padding-top: 20px;*/
+/*    padding-bottom: 20px;*/
+/*}*/
+
+/*#controls {*/
+/*    z-index: 4;*/
+/*    font-size: 9pt;*/
+/*    text-align: center;*/
+/*    padding-bottom: 6px;*/
+/*    position: fixed;*/
+/*    right: 14px;*/
+/*    top: 4px;*/
+/*    user-select: none;*/
+/*    background: white;*/
+/*    transition: color 0.6s, background 0.6s;*/
+/*}*/
+
+/*#controls [disabled] {*/
+/*    color: #ccc;*/
+/*}*/
+
+/*#controls>*:not(:last-child):after {*/
+/*    content: " | ";*/
+/*}*/
+
+/*@media screen and (max-width: 980px) {*/
+/*    #controls {*/
+/*        z-index: 2;*/
+/*        padding-top: 24px;*/
+/*        top: 0;*/
+/*        left: 0;*/
+/*        right: 0;*/
+/*    }*/
+/*}*/
+
+/*!* */
+/*  Dark Theme (Added in Inky 0.10.0)*/
+/*    # theme: dark*/
+/**!*/
+
+/*body.dark {*/
+/*    background: black;*/
+/*    color: white;*/
+/*}*/
+
+/*.dark h2 {*/
+/*    color: #666;*/
+/*}*/
+
+/*.dark .container {*/
+/*    background: black;*/
+/*}*/
+
+/*.dark .written-in-ink {*/
+/*    background: black;*/
+/*}*/
+
+/*.dark a {*/
+/*    color: #cc8f1a;*/
+/*    transition: color 0.6s;*/
+/*}*/
+
+/*.dark a:hover {*/
+/*    color: white;*/
+/*}*/
+
+/*.dark strong {*/
+/*    color: white;*/
+/*}*/
+
+/*.dark #controls [disabled] {*/
+/*    color: #444;*/
+/*}*/
+
+/*.dark .end {*/
+/*    color: white;*/
+/*}*/
+
+/*.dark #controls {*/
+/*    background: black;*/
+/*}*/
+
+
+@font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+    url('quicksand-v24-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('quicksand-v24-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+* {
+    font-family: "Quicksand", sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height:100%;
+    overflow: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: lighter;
-    background: white;
-    overflow: hidden;
+    background: linear-gradient(45deg, rgba(199,255,193,0.6) 0%, rgba(205,255,226,0.6) 25%, rgba(153,237,255,0.6) 50%, rgba(197,192,255,0.6) 75%, rgba(246,196,255,0.6) 100%);
+    background-size: 400% 400%;
+    animation: gradient 90s ease infinite;
+
+    transition: 0.5s;
+
 }
 
-body.switched {
-    transition: color 0.6s, background-color 0.6s;
-}
-
-h1,
-h2 {
-    text-align: center;
-    font-family: "Quattrocento", Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    font-size: 30pt;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 14pt;
-    font-style: italic;
-    font-family: sans-serif;
-    font-weight: lighter;
-    color: #BBB;
-}
-
-.header {
-    padding-top: 3em;
-    padding-bottom: 3em;
-}
-
-/*
-  Built-in class:
-    # author: Name
-*/
-.byline {
-    font-style: italic;
-}
-
-.written-in-ink {
-    z-index: 3;
-    font-size: 9pt;
-    font-family: sans-serif;
-    text-align: center;
-    font-weight: 700;
-    position: fixed;
-    display: block;
-    width: 100%;
-    background: white;
-    transition: color 0.6s, background 0.6s;
-    margin: 0;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    height: 14px;
-    top: 0;
-}
-
-/* 
-  Enables <iframe> support work on itch.io when using mobile iOS
-*/
-.outerContainer {
-    position: absolute;
-    display: block;
-    margin: 0;
-    padding: 0;
-    -webkit-overflow-scrolling: touch;
-    overflow: scroll;
-    overflow-x: hidden;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    margin-top: 24px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-@media screen and (max-width: 980px) {
-    .outerContainer {
-        margin-top: 44px;
-        background-size: cover;
-        background-repeat: no-repeat;
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
 
-.container {
-    display: block;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    padding-top: 4em;
-    background: white;
-}
 
-.switched .container {
-    transition: background-color 0.6s;
-}
-
-p {
-    font-size: 13pt;
-    color: #888;
-    line-height: 1.7em;
-    font-weight: lighter;
-}
-
-a {
-    font-weight: 700;
-    color: #b97c2c;
-    font-family: sans-serif;
-    transition: color 0.6s;
-    text-decoration: none;
-}
-
-a:hover {
-    color: black;
-    transition: color 0.1s;
-}
-
-strong {
-    color: black;
-    font-weight: bold;
-}
-
-img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-}
 
 .container .hide {
     opacity: 0.0;
@@ -148,115 +320,84 @@ img {
     transition: opacity 1.0s;
 }
 
-/*
-  Class applied to all choices
-  (Will always appear inside <p> element by default.)
-*/
-.choice {
+div.container {
+    font-size: 23px;
+
+    border-radius: 15px;
+
+    padding-top: 25px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right:100px;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+
+    background-color: rgba(255, 255, 255, 1);
+
+    transition: 0.5s;
+}
+
+div.container:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,89,181,0.1), 0 17px 50px 0 rgba(0,89, 181,0.05);
+}
+
+div.header {
     text-align: center;
-    line-height: 1.7em;
 }
 
-/* 
-  Class applied to first choice
-*/
-:not(.choice)+.choice {
-    padding-top: 1em;
-}
 
-/*
-  Class applied to choice links
-*/
-.choice a {
-    font-size: 15pt;
-}
-
-/* 
-  Built-in class:
-    The End # CLASS: end
-*/
-.end {
+p.choice {
     text-align: center;
+}
+
+p.choice a {
+    text-decoration: none;
+    
+    font-size: 18px;
     font-weight: bold;
-    color: black;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-#controls {
-    z-index: 4;
-    font-size: 9pt;
     text-align: center;
-    padding-bottom: 6px;
-    position: fixed;
-    right: 14px;
-    top: 4px;
-    user-select: none;
-    background: white;
-    transition: color 0.6s, background 0.6s;
+
+    margin: 10px 10px;
+
+    padding: 10px;
+
+    cursor: pointer;
+    
+    border-radius: 15px;
+    border: 1px solid rgb(0, 150, 220);
+
+    background: rgba(255,255,255,1);
+
+    transition: 0.5s;
 }
 
-#controls [disabled] {
-    color: #ccc;
+p.choice a:hover {
+    background-color: rgb(0, 150, 220);
+    /* box-shadow: 0 7px 10px 0 rgba(0,89,181,0.3), 0 9px 15px 0 rgba(0,89, 181,0.25); */
+    color: rgb(255, 255, 255);
 }
 
-#controls>*:not(:last-child):after {
-    content: " | ";
+.buttons {
+    text-align: center;
+    
+    padding-bottom: 30px;
 }
 
-@media screen and (max-width: 980px) {
-    #controls {
-        z-index: 2;
-        padding-top: 24px;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
+.buttons a{
+    color: blue;
+    text-decoration: underline;
+    
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-/* 
-  Dark Theme (Added in Inky 0.10.0)
-    # theme: dark
-*/
-
-body.dark {
-    background: black;
-    color: white;
+.buttons a:hover {
+    color: rgb(0, 150, 220);
 }
 
-.dark h2 {
-    color: #666;
-}
-
-.dark .container {
-    background: black;
-}
-
-.dark .written-in-ink {
-    background: black;
-}
-
-.dark a {
-    color: #cc8f1a;
-    transition: color 0.6s;
-}
-
-.dark a:hover {
-    color: white;
-}
-
-.dark strong {
-    color: white;
-}
-
-.dark #controls [disabled] {
-    color: #444;
-}
-
-.dark .end {
-    color: white;
-}
-
-.dark #controls {
-    background: black;
+h3 {
+    text-align: center;
 }
